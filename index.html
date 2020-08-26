@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Email</title>
+    <!--css stylesheet bootstraps-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Javascript-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Nav side bar-->
+            <div class="col-md-2 left-sidebar" id="box1">  
+                <!-- Image and text -->
+                
+                  <p class="welcome">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-mailbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+                      <path fill-rule="evenodd" d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"/>
+                      <path d="M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+                    </svg>
+                    Welcome, Mina!
+                  </p>
+                
+
+                  <button type="button" id="btn-compose" class="btn btn-warning">Compose</button>
+                  
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Inbox (1)</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Tagged</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Important</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sent Mail</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Draft</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Trash</a>
+                        </li>
+                    </ul>
+              </div>
+          <!--Inbox and Search bar-->
+          <div class="col-md-3 inbox" id="box2">
+            
+            <div class="search-bar">
+            <nav class="navbar navbar-light bg-light">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" style="width: 70%; float: left;" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="float: right;" type="submit">Search</button>
+              </form>
+            </nav>
+            </div>
+
+            <br>
+            
+            <div class="alert alert-secondary" role="alert">
+               <a href="#" class="alert-link">LinkedIn</a> <br>
+                <p> You have a new connection request.</p>
+            </div>
+            <div class="alert alert-secondary" id="box2-inbox" role="alert">
+              <a href="#" class="alert-link">Michael Scott Daily Quotes</a><br> I'm optimistic because everyday I get a little more desp...
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              <a href="#" class="alert-link">LaMar Software</a> <br> Learn how you can give us money by calling (20) 322-7...
+            </div>
+          </div>
+          <!--Compose Email-->
+          <div class="col-md-7 email">
+            
+              <div class="header-email">
+                <p class="to-email">To: taylor@lamarsoftware.io</p>
+                <p class="from-email">From: re-reply@theofficenbc.com</p>
+              </div>
+
+
+              <div class="display-flex justify-content-between align-items-center" id="emailHeader">
+
+                <span>
+                  Micheal Scott Daily Quotes
+                </span>
+                <span style="float: right;">
+
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                  </svg>
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.5 4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H3.5V9a.5.5 0 0 1-1 0V4z"/>
+                    <path fill-rule="evenodd" d="M2.646 3.646a.5.5 0 0 1 .708 0l9 9a.5.5 0 0 1-.708.708l-9-9a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  
+                </span>
+              
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                 
+                  <p>"Friends joke with on another. 'Hey, you're poor.''Hey, your momma's dead.' That's what friends do."</p>
+                  <p>"It's a good thing Russia doesn't exist anymore."</p>
+                  <p>"You cheated on me? When I specifically asked you not to?"</p>
+                  <p>"It just seems awfully mean. But sometimes, the end justify the mean."</p>
+                  <p>"Reverse psycology is an awesome tool. I dont know if you guys know about it, but, basically, you make someone think the oppoisite of what you believe, and that tricks them in to doing somithing stupid. wols like a charm."</p>
+                
+           
+                </blockquote>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">
+                  
+                </textarea>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" id="paperclip" class="bi bi-paperclip" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                </svg>
+                <button type="button" id="reply-btn" style="float:right;" class="btn btn-outline-warning">Reply</button>
+              </div>
+            
+            
+            
+          </div>
+        </div>
+    </div>
+</body>
+</html> 

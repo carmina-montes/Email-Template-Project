@@ -1,0 +1,109 @@
+@media only screen and (max-width: 768px){
+#box1{
+    height: 60vh;
+    
+}
+#box2 {
+    height: 70vh;
+    
+}
+    
+}
+body {
+    margin: 0px;
+}
+div {
+
+   /* 
+   border: solid;
+   */
+     
+}
+.welcome {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.bi-mailbox {
+    size: 20px;
+}
+#btn-compose {
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+
+/* sidebar */
+#box2-inbox {
+    box-shadow: 0px 0px 3px 2px  lightgray;
+}
+.text-body{
+    font-size: 13px;
+    margin-top: 0px;
+    
+}
+#paperclip {
+    size: 10px;
+    margin-right: 60px;
+}
+
+.left-sidebar {
+    background-color: #849178;
+    height: 100vh;
+    padding-bottom: 172px;
+    margin: 0px;
+    
+} 
+/*inbox*/
+
+.navbar {
+    
+   
+}
+.nav-link {
+    color: white;
+    
+}
+.inbox {
+    padding-bottom: 170px;
+}
+.form-inline {
+    margin-top: 5px;
+    /*
+    align-items: center;
+    display: flex;
+    */
+}
+/*email and reply*/
+.email {
+    padding-bottom: 100px;
+}
+.to-email {
+    color: rgb(160, 157, 157);
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.from-email {
+    color: rgb(160, 157, 157);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card {
+    background-color: transparent;
+}
+.card-body p{
+    font-size: 13px;
+    padding-left: 0px;
+    padding-top: 0px;
+    
+    
+}
+#reply-btn {
+    margin-left: 700px;
+}
+
